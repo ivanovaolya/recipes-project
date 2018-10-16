@@ -12,7 +12,7 @@
         <div class="row">
           <div class="col-xs-12">
             <div class="form-group">
-              <label for="imagePath">Image</label>
+              <label for="imagePath">Image URL</label>
               <input id="imagePath" type="text" class="form-control" formControlName="imagePath">
             </div>
           </div>
@@ -25,7 +25,7 @@
         <div class="row">
           <div class="col-xs-12">
             <div class="form-group">
-              <label for="description">Image</label>
+              <label for="description">Description</label>
               <textarea id="description" type="text" class="form-control" rows="6"
                         formControlName="description"></textarea>
             </div>
@@ -61,7 +61,7 @@
 <br>
 <div class="row">
   <div class="col-xs-12">
-    <button type="submit" class="btn btn-success">Save</button>
+    <button type="submit" class="btn btn-success" [disabled]="recipeEditForm.invalid">Save</button>
     <button type="button" class="btn btn-default">Cancel</button>
   </div>
 </div>
