@@ -24,6 +24,11 @@ export class RecipeService {
     return this.recipes.slice(); // returns exact copy of the array
   }
 
+  setRecipes(recipes: Recipe[]) {
+    this.recipes = recipes;
+    this.notifyOnRecipesChanged();
+  }
+
   getRecipe(index: number) {
     return this.recipes[index];
   }
