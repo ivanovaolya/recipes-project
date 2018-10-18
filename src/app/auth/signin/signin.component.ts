@@ -21,4 +21,8 @@ export class SigninComponent implements OnInit {
     this.authService.signinUser(email, password);
   }
 
+  /**
+   * if we need to limit an access (only for authenticated users), we should set up rules in Firebase:
+   * 'auth !=null' - for read/write
+   */
 }
