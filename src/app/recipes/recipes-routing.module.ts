@@ -23,6 +23,7 @@ const recipesRoutes: Routes = [
   imports: [
     RouterModule.forChild(recipesRoutes) // register defined routes using forChild since it's child module
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [AuthGuard]
 })
 export class RecipesRoutingModule {}
